@@ -19,7 +19,7 @@ create table appointments(
     patient_id int not null,
     doctor_id int not null,
     appointment_date date not null,
-    appointment_time decimal not null,
+    appointment_time time not null,
      foreign key (doctor_id)  references doctors(doctor_id),	
      foreign key (patient_id) references patients(patient_id)	
 		on delete cascade
